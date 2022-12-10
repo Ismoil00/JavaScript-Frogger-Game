@@ -1,0 +1,160 @@
+/* Frogger GAME: */
+/* || Resets || */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(rgb(242, 252, 255), lightblue);
+}
+
+/* || Frogger Game || */
+.froggerGame {
+  padding: 50px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btnDiv {
+  width: 360px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.froggerGame button {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  background-color: lightseagreen;
+  color: black;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.froggerGame button:hover {
+  background-color: rgb(0, 49, 48);
+  color: white;
+}
+
+.froggerGridDiv {
+  width: 360px;
+  height: 360px;
+  border: 10px outset sandybrown;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.froggerGridDiv div {
+  width: 40px;
+  height: 40px;
+}
+
+#resultFrogger {
+  color: rgb(0, 49, 48);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.leftSecondsDiv {
+  width: 360px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftSecondsDiv input {
+  width: 100px;
+  height: 30px;
+  padding: 0 5px;
+  background-color: rgba(32, 178, 171, 0.3);
+  border: 1.5px solid lightseagreen;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  outline: none;
+}
+
+.leftSecondsDiv button {
+  height: 33px;
+  margin-left: -5px;
+  font-size: 0.8rem;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.leftSecondsDiv button:active {
+  color: lightblue;
+}
+
+.leftSecondsDiv h2 {
+  font-size: 1rem;
+  color: rgb(0, 49, 48);
+}
+
+.froggerGridDiv div {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ground {
+  background: url(images/ground.png);
+}
+
+.ending_block {
+  background: url(images/finish.png);
+}
+
+
+.l1,
+.l2,
+.l3 {
+  background: url(images/trunk.png);
+}
+
+.l4,
+.l5 {
+  background: url(images/water.png);
+}
+
+.cl1 {
+  background: url(images/carLeft.png);
+}
+
+.cr1 {
+  background: url(images/carRight.png);
+}
+
+.c2,
+.c3 {
+  background: url(images/road.png);
+}
+
+.frog {
+  background: url(images/frogOnLand.png);
+}
+
+.frogOnRoad {
+  background: url(images/frogOnRoad.png);
+}
+
+.frogOnTruck {
+  background: url(images/frogOnTruck.png);
+}
+
+.frogOnFinish {
+  background: url(images/frogOnFinish.png);
+}

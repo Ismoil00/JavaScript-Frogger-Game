@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frogger Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/icon.png" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- Frogger GAME -->
+    <section class="froggerGame">
+      <h2 id="resultFrogger">Start Playing</h2>
+      <div class="leftSecondsDiv">
+        <div class="setTimeInput">
+          <input type="number" placeholder="set seconds" id="secondsInput"/>
+          <button type="submit" id="setTimeBtn">Set Time</button>
+        </div>
+        <h2>Left Seconds: <span id="leftSeconds">0</span></h2>
+      </div>
+
+      <div class="froggerGridDiv">
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ending_block"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="log_left l1"></div>
+        <div class="log_left l2"></div>
+        <div class="log_left l3"></div>
+        <div class="log_left l4"></div>
+        <div class="log_left l5"></div>
+        <div class="log_left l1"></div>
+        <div class="log_left l2"></div>
+        <div class="log_left l3"></div>
+        <div class="log_left l4"></div>
+
+        <div class="log_right l5"></div>
+        <div class="log_right l1"></div>
+        <div class="log_right l2"></div>
+        <div class="log_right l3"></div>
+        <div class="log_right l4"></div>
+        <div class="log_right l5"></div>
+        <div class="log_right l1"></div>
+        <div class="log_right l2"></div>
+        <div class="log_right l3"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="car_left cl1"></div>
+        <div class="car_left c2"></div>
+        <div class="car_left c3"></div>
+        <div class="car_left cl1"></div>
+        <div class="car_left c2"></div>
+        <div class="car_left c3"></div>
+        <div class="car_left cl1"></div>
+        <div class="car_left c2"></div>
+        <div class="car_left c3"></div>
+
+        <div class="car_right cr1"></div>
+        <div class="car_right c2"></div>
+        <div class="car_right c3"></div>
+        <div class="car_right cr1"></div>
+        <div class="car_right c2"></div>
+        <div class="car_right c3"></div>
+        <div class="car_right cr1"></div>
+        <div class="car_right c2"></div>
+        <div class="car_right c3"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="frog ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+        <div class="ground"></div>
+      </div>
+      <div class="btnDiv">
+        <button id="startPauseBtn">Start</button>
+        <button id="refreshBtn">Refresh</button>
+      </div>
+    </section>
+  </body>
+</html>
